@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Introduction to CSS</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<nav id="navbar">
+		<ul>
+			<li><a href="#introduction" class="nav-link">CSS là gì?</a></li>
+			<li><a href="#need" class="nav-link">Cần gì để viết CSS?</a></li>
+			<li><a href="#do" class="nav-link">Làm được gì với CSS?</a></li>
+			<li><a href="#how" class="nav-link">Sử dụng CSS như nào?</a></li>
+			<li><a href="#syntax" class="nav-link">Cú pháp cơ bản</a></li>
+		</ul>
+	</nav>
+	<main id="main-doc">
+		<section id="introduction">
+			<article>
+				<h1>CSS là gì</h1>
+				<ul>
+					<li>Viết tắt của Cascading Style Sheets</li>
+					<li>Không phải là 1 ngôn ngữ lập trình</li>
+					<li>Là ngôn ngữ định kiểu cho văn bản web</li>
+					<li>Sử dụng để làm cho trang web thêm bắt mắt, hấp dẫn</li>
+				</ul>
+			</article>
+		</section>
+
+		<section id="need">
+			<article>
+				<h1>Cần gì để viết CSS</h1>
+				<ul>
+					<li>
+						<span>Trình duyệt web:</span>
+						<br><img src="./icons.png" alt="browser icons" width="600px"> 
+					</li>
+					<li>
+						<span>Trình soạn thảo:</span><br>
+						<img src="./editors.png" alt="code editors icons" width="600px">
+
+					</li>
+				</ul>
+			</article>	
+		</section>
+		
+		<section id="do">
+			<article>
+				<h1>Làm được gì với CSS?</h1>
+				<ul id="show-case">
+					<li>
+						<img src="./1.gif" alt="hover">
+					</li>
+					<li>
+						<img src="./2.gif" alt="text">
+					</li>
+					<li>
+						<img src="./3.gif" alt="layout">
+					</li>
+					<li>
+						<img src="./4.gif" alt="animation">
+					</li>
+					<li>
+						<img src="./5.gif" alt="responsive">
+					</li>
+					<li>
+						<img src="./6.gif" alt="parallax">
+					</li>
+				</ul>
+			</article>
+		</section>
+		
+		<section id="how">
+			<article>
+				<h1>Sử dụng CSS như nào?</h1>
+				<span>Có ba cách để sử dụng CSS</span>
+				<ul>
+					<li><em>Inline CSS</em>: Áp dụng trực tiếp trên một đối tượng nhất định bằng thuộc tính style: <br>	
+						<code>
+							&lt;style="font-weight:bold; text-decoration:underline; color:#FF0000;"&gt;
+						</code>
+
+					</li>
+
+					<li>
+						<em>Internal CSS</em>: Đặt CSS ở đầu trang Web để áp dụng kiểu dáng cho toàn bộ trang ấy, khi đó chỉ cần đặt đoạn CSS vào trong cặp thẻ style rồi đặt vào trong phần head của Web:
+						<code>
+							&lt;head&gt;&lt;style type="text/css"&gt;body {font-family:verdana; color:#0000FF;}&lt;/style&gt;&lt;/head&gt;
+						</code>
+
+					</li>
+					<li>
+						<em>External CSS</em>: Đặt các thuộc tính CSS vào một tệp tin riêng biệt (*.css), khi đó có thể tham chiếu đến từ nhiều trang Web khác nhau:
+						<code>
+							&lt;link rel="stylesheet" type="text/css" href="style.css"/&gt;
+						</code>
+					</li>
+				</ul>
+			</article>
+		</section>
+
+		<section id="syntax">
+			<article>
+				<h1>Cú pháp cơ bản</h1>
+				<p>CSS được tạo thành từ các Style Rule. Các rule này được thông dịch bởi trình duyệt và sau đó được áp dụng tới các phần tử tương ứng trong tài liệu của bạn. Style Rule bao gồm ba phần:</p>
+				<p><strong>Selector:</strong> (hiểu nôm na là bộ chọn phần tử) Một selector là một thẻ HTML mà tại đó một bạn áp dụng một style cho nó. Đó có thể là bất kỳ một thẻ HTML nào, như thẻ div, thẻ span, thẻ p, …</p>
+				<p><strong>Property:</strong> (thuộc tính) Là property của một kiểu thuộc tính của thẻ HTML. Nói một cách đơn giản thì tất cả các thuộc tính trong HTML được chuyển đổi thành các CSS property. Đó có thể là color, border....</p>
+				<p><strong>Value(giá trị):</strong> Là các giá trị được gán cho các property. Ví dụ, color có thể có các giá trị là red, #FFF, rgb(255,0,0)...</p>
+				<p>Cú pháp chung: <br><code>selector { property: value }</code></p>
+			</article>
+		</section>
+	</main>
+</body>
+</html>
